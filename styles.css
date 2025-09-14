@@ -1,0 +1,130 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Main Title */
+h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Quiz Container */
+#quiz-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#quiz-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Question Text */
+#Questions {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Choices List */
+#choices {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#choices li {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+#choices li:hover {
+    background: #d1e7fd;
+    transform: scale(1.02);
+}
+
+/* Correct / Wrong colors */
+.correct {
+    background: #4CAF50 !important;
+    color: #fff;
+}
+
+.wrong {
+    background: #f44336 !important;
+    color: #fff;
+}
+
+/* Next / Restart Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #388e3c;
+    transform: scale(1.05);
+}
+
+/* Quiz Over Message */
+#quiz-container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        margin: 15px 0;
+    }
+
+    #quiz-container {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    #Questions {
+        font-size: 1.1rem;
+    }
+
+    #choices li {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+}
